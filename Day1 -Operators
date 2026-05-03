@@ -1,0 +1,110 @@
+##arithmetic
+
+i= 4;
+j = 3;
+k = i+j;
+print('The Value Of K :',k)
+
+
+i = 3;
+j = 4;
+k = i/j;
+print('The Value of K:',k)
+
+##Comparison(==,<,>,!=,<=,>=)
+
+
+##inga oru program la if condition na adhula else la condition poda kudhadu ok va
+
+
+x = 10;
+y = 13;
+if(x==y):  # value of two operand are equal
+   print('x is equal to y')
+else:
+   print('x is not equla to y')
+if(x<y):
+   print('y is greater')
+else:
+    print('x is greater')
+    
+
+##Logical(<,>,=)
+  #if condition la else ilanalum work agagm ok va
+c1=int(input("Enter the number c1:"));
+c2 = int(input("Enter the number c2 :"));
+c3 = int(input("Enter the number c3 :"));
+if((c1<c2) and (c1<c3)) :
+    print('c1 is lesser than c1 and c2')
+if(not(c1<c2)):
+    print('c1 is greater than c2')
+if((c1>c2)or (c1>c3)):
+    print('c1 is greater than c2 and c3')
+
+ ##Assignment (+=,-=,*=,/=,<=,>=)
+
+x=12;
+y=24;
+z=0;
+z=x + y     
+print('1- Value of z',z)    ##,z mukiyam bigulu
+z += x
+print('2-Vakue of z',z)
+z -= x
+print('3-value of z',z)
+z *= x
+print ('4- Value of z',z)
+
+##idhula first Z value Z=x+y so 12+24=36  so ippa z value 36
+##then =+ adula 36+12 =48 aprom la idhudhan varum ok va
+
+
+##Bitwise(|,&,^,~,<<,>>)
+
+  #bit level : 16 8 4 2 1
+         #9 :    1 0 0 1
+         #7 :    0 1 1 1
+        #18 :  1 0 0 1 0
+
+x=73   ##(64 32 16 8 4 2 1): 1 0 0 1 0 0 1
+y=11   ##(8 4 2 1)         : 1 0 1 1
+z=0
+z = x|y
+print('value of 1=',z)
+
+
+##Membership(in,not in)
+x=1
+y=9
+list1 =[1,2,3,4,5,6,7]
+list2 =[1,5,7,9]
+if(x in list1):
+    print ('x value in list1')
+else:
+    print('x is not in list1')
+if (y not in list2):
+    print('y not in list 2')
+else:
+    print('y is in list 2')
+
+##Identity (is ,is not)
+    
+x=2
+y=50
+if(x is y):
+    print('x and y have same identity')
+else:
+    print('x and y have no same identity')
+
+
+  ##Summary
+
+## Arithmetic: Performs mathematical operations like addition, subtraction, multiplication, division (+, -, *, /, %, **).
+## Unary Arithmetic: Works on a single operand. Used to indicate positive or negative values (+x, -x). Does not need two variables.
+## Comparison: Compares two values and returns True/False using operators (==, !=, >, <, >=, <=).
+## Logical: Combines multiple conditions using (and, or, not) and returns True/False.
+## Boolean: Represents truth values using True and False, used in conditions.
+## Assignment: Assigns and updates values using operators (=, +=, -=, *=, /=).
+## Bitwise: Performs operations at binary level using (&, |, ^, ~, <<, >>).
+## Membership: Checks if a value exists in a sequence using (in, not in).
+## Identity: Checks if two variables refer to the same object using (is, is not).
