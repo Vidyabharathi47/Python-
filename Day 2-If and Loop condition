@@ -1,0 +1,98 @@
+
+##input statement
+
+name=str(input("Enter your Name:"))
+course = str(input("Enter your Course:"))
+s1=float(input("subject 1 marks"))          ##Float mukiyam
+s2=float(input("subject 2 marks"))
+s3=float(input("subject 3 marks"))
+total=s1+s2+s3
+average=total/3
+print('The total marks scored:',total)
+print('the average percentage:',average)
+
+##if statement
+
+s=int(input('Enter the number:'))
+if(s<10):
+    print('s is lesser')
+else:
+    print('s is greater')    
+##multiple if and else condition
+
+i=int(input('Enter the number'))
+if(i<10):
+    print('The condition is true')
+    print('the given s is smaller')
+else:
+    print('The condition is false')
+    print('the given s is larger')   
+
+
+
+##interchanged values between two variable
+
+m=int(input('Enter the value of m:'))
+n=int(input('Enter the value of n:'))
+a=0
+if(m>n):
+    a=m
+    m=n
+    n=a
+print('The interchanged value be')
+
+
+
+##if -else condition
+a=int(input('Enter your age:'))
+if (a<18):
+    print('Your are a teenager')
+else:
+    print('Your are a adult')
+
+
+
+
+##if-elif-if statement
+
+a=int(input('Enter your age:'))
+if(a<18):
+    print('Ur in a teen age')
+elif(a>18 and a<60):
+    print('Ur in a adult stage')
+else:
+    print('Ur in a old age stage')
+     
+
+     #############LOOPING##############
+
+     ##while condition
+
+##While loop na oru condition True ah irukum varaikum code repeat aagum.
+ ##simple
+ 
+i=1
+while i <= 5:
+    print(i)
+    i += 1
+
+##Addtion of numbers up to 10 by using the while loop
+i=1;sum=0   ##1 la irundhu start,#total store value initaile ahh 0
+while i <=10: 
+    sum=sum+i #current i value ahh sum kuda add pannu
+    i=i+1 # increment panrom ilana loop agaum
+print('Sum of numbers upto 10:',sum)
+
+
+##for loop condition
+## for Loop is used to execute a block of code repeatedly until a condition becomes false.”
+
+for word in 'Vidya':
+    print('Char in Word:',word)
+
+
+##adding number upto 10
+i=1,sum=0
+for i in range(11):
+    sum=sum+i
+print('Sum of numbers upto 10 values:',sum)
