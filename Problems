@@ -25,3 +25,52 @@ print(fact)
 
 x,y,z,t,e,u,= 3,5,4,7,2,3
 print(y,x,u,z,t,e)
+
+
+##Circulate the value of n variable
+
+n=int(input('Enter the number of values:'))
+list1=[]
+for i in range(n):
+   x=int(input('Enter the number:'))
+   list1.append(x)
+print('Circulation the element:',list1)     
+x=list1.pop(0) ##remove 1st element
+list1.append(x)  ##add it to end
+print(list1)
+
+###Check prime or not
+
+n=int(input("Enter the number"))
+i=2
+while i<n:     ## 2 la irundhu n-1 varakum check pannu
+    if n%1==0:   ##divide ana not prime
+        print('This is not a Prime')  
+        break  ##answer got so break
+    i=i+1      ##increments the value of i by 1 in each iteration
+else:                      ###no elif after while condition
+  if n>1:
+    print("prime")
+  else:
+    print('Not a prime')
+
+###Current date and time
+import datetime
+now = datetime.datetime.now()   ##module(library).class.current date&time
+print('The Current Date and Time:')
+print(now.strftime("%Y-%m-%D %H:%M:%S"))
+
+##without Formation
+import datetime
+now=datetime.datetime.now()
+print(now)
+
+
+##print the month and year in a calender
+import calendar
+y=int(input("Enter the year:"))
+m=int(input("Enter the Month:"))
+print(calendar.month(y,m))
+
+
+
