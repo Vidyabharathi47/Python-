@@ -1,3 +1,5 @@
+ 
+
 ##Reverse a string
 
 s='vidya'
@@ -72,5 +74,58 @@ y=int(input("Enter the year:"))
 m=int(input("Enter the Month:"))
 print(calendar.month(y,m))
 
+
+import datetime
+now=datetime.datetime.now()
+print(now)
+
+##Maximum Number
+s=(1,2,4,6,8,9,6)
+print(max(s))
+
+##Practise (10-05-2026)
+
+s=(input('Enter the word:'))
+print (s[::-1])
+if s==(s[::-1]):
+  print('This is palindrome')
+else:
+  print('This is Not a Palindrome') 
+
+
+
+##Factorial
+n=int(input("Enter the number:"))
+fact=1
+for i in range(1,n+1):
+    fact*=i
+print(fact)    
+
+##Fibonacci
+n1,n2 = 0,9
+for i in range(10):
+  print(n1)
+  n1,n2= n2,n1+n2   ###be aware of the intend space
+
+##find duplicate elements
+a=[1,2,3,4,5,6,4]
+dup=[] ## empty set to store duplicates
+for i in a:  ##loop run through 6each element
+  if a.count(i)> 1 and i not in dup:
+    dup.append(i)
+print(dup)
+
+
+##remove duplicate from list
+a=[1,2,3,4,5,3,2]
+print(list(set(a)))
+
+## linear search
+a=[10,20,30,40,50]
+x=30
+if x in a:
+  print('Found',x)
+else:
+  print('Not  Found',x)  
 
 
